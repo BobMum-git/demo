@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+<div style="margin:10px auto;width:300px">
+<h3>统计下列文本框的字数</h3>
+<form action="/result/" method="post">
+	{% csrf_token %}
+	<textarea cols ="30" rows = "15" name = "chat">
+	</textarea><br>
+	<input type="submit" value="统计"/>
+</form>
+</div>
+</body>
+</html>
